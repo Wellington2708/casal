@@ -71,7 +71,7 @@ body {
     display: flex;
     align-items: center;
     height: 88vh;
-    background-image: url('../assets/sombreado.JPG');
+    background-image: url('../assets/sombreado.jpg');
     background-size: cover; /* Ajusta a imagem para cobrir toda a tela */
     background-position: center; /* Centraliza a imagem */
     background-repeat: no-repeat; /* Evita repetição da imagem */
