@@ -1,0 +1,118 @@
+@import url('https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400..700;1,400..700&family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap');
+
+/* importar icones se necessãrio for para colocar nas cartas */
+
+:root {
+    --black-coffe: #131010;
+    --bege-dourado: #F0BB78;
+    --bronze-escuro: #543A14;
+    --pessego-claro: #FFF0DC;
+
+
+
+    --font-playfair: 'Playfair Display', serif;
+    --font-lola: 'Lora', serif;
+}
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+   
+}
+
+body {
+    background-color: var(--black-coffe);
+    font-family: var(--font-lola);
+    height: 100vh;
+}
+
+.cabecalho {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 1rem 2rem;
+    gap: 2rem;
+    
+}
+
+
+
+
+.cabecalho__link{
+    text-decoration: none;
+    color: var(--bege-dourado);
+    font-size: 1.2rem;
+    font-family: var(--font-playfair);
+}
+
+.cabecalho__link:hover {
+    background-color: var(--bronze-escuro);
+    
+}
+
+.container {
+    display: flex;
+    gap: 2rem;
+    padding: 2rem;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.container__section{
+    display: flex;
+    flex-direction: column;
+    width: 650px;
+}
+
+.image__background {
+    display: flex;
+    align-items: center;
+    height: 88vh;
+    background-image: url('../assets/sombreado.JPG');
+    background-size: cover; /* Ajusta a imagem para cobrir toda a tela */
+    background-position: center; /* Centraliza a imagem */
+    background-repeat: no-repeat; /* Evita repetição da imagem */
+    
+}
+
+
+/* Pesquisar paleta de cores nos sites anotados no caderno */
+.paragrafo {
+    color: var(--pessego-claro);
+}
+
+.imagem__home {
+    width: 28rem;
+    height: 35rem;
+} 
+
+.carta {
+    padding: 1.5em;
+    font-size: 16px;
+}
+
+.container__titulo{
+    color: var(--pessego-claro);
+}
+
+.carousel-inner img {
+    width: 100%;  /* Faz a imagem ocupar toda a largura do contêiner */
+    height: 80vh; /* Define a altura como 80% da altura da tela */
+    object-fit: cover; /* Garante que a imagem cubra o espaço sem deformar */
+}
+
+
+.rodape {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: var(--bege-dourado);
+    padding: 1rem;
+    font-family: var(--font-playfair);
+    gap: 3rem;
+}
+
+
