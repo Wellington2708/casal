@@ -58,19 +58,23 @@ body {
     padding: 2rem;
     justify-content: center;
     align-items: center;
+    height: 80vh;
 
 }
 
 .container__section{
     display: flex;
-    flex-direction: column;
+    justify-content: center;
     width: 650px;
+    
 }
 
 .image__background {
     display: flex;
+    flex-direction: column;
+    justify-content: center;
     align-items: center;
-    height: 88vh;
+    height: 100vh;
     background-image: url('../assets/carrossel/sombra.JPG');
     background-size: cover; /* Ajusta a imagem para cobrir toda a tela */
     background-position: center; /* Centraliza a imagem */
@@ -88,6 +92,16 @@ body {
     width: 28rem;
     height: 35rem;
 } 
+
+.carta__container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+    padding: 2rem;
+    height: 90vh;
+}
 
 .carta {
     padding: 1.5em;
@@ -115,4 +129,45 @@ body {
     gap: 3rem;
 }
 
+@media (max-width: 768px) {
+    .container {
+        flex-direction: column;
+        align-items: center;
+        margin-top: 3rem;;
+    }
 
+    .carta__container {
+        flex-direction: column;
+        align-items: center;
+        gap: 1rem;
+        margin: 0;
+    }
+
+    .container__section {
+        
+        height: 100%;
+    }
+
+    .paragrafo {
+        font-size: 1.2rem;
+    }
+
+    .cabecalho__link {
+        font-size: 1.5rem;
+    }
+
+    .imagem__home {
+        width: 25rem;
+        height: 30rem;
+    }
+
+    .carousel-inner {
+        height: 85vh; /* Ajusta a altura do carrossel para telas menores */
+    }
+
+    .carousel-inner img {
+        height: 80vh; /* Ajusta a altura da imagem para telas menores */
+        padding: 0;
+        margin: 0;
+    }
+}
