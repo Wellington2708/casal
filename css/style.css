@@ -82,6 +82,14 @@ body {
     
 }
 
+.imagem__home {
+    width: 100%;
+    max-width: 390px;
+    height: auto;
+    margin-top: 2rem;
+  }
+
+
 
 
 .paragrafo {
@@ -132,39 +140,66 @@ body {
 @media (max-width: 430px) {
 
     .container {
+        display: flex;
+        gap: 2rem;
+        padding: 2rem;
+        justify-content: center;
+        align-items: center;
+        flex-wrap: wrap;
+      }
+      
+      .carta__container {
+        display: flex;
+        flex-direction: column;
+        justify-content: start;
+        align-items: center;
+        gap: 2rem;
+        padding: 2rem;
+      }
+      
+
+      .cabecalho {
         flex-direction: column;
         align-items: center;
-        margin-top: 3rem;
-
-    }
-
-    .cabecalho {
-        flex-direction: column;
-        align-items: start;
         gap: 1rem;
-        margin-top: 3rem;
-    }
-
-    .image__background {
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            gap: 1rem;
-            width: 100%; 
-            overflow-wrap: break-word;
-            margin-top: 5rem;
-          }
-          
+        padding: 1rem;
+      }
+    
+      .cabecalho__link {
+        font-size: 1.2rem;
+      }
     
 
-    .container__section {
-        
-        height: 100%;
-    }
-
-    .descricao__container{
-        height: 68%;
-    }
+    .image__background {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+        padding: 1rem;
+        width: 100%;
+        height: auto;
+        gap: 1rem;
+      }
+    
+      .carta {
+        width: 100%;
+        max-width: 390px;
+        font-size: 1rem;
+        line-height: 1.6;
+        text-align: justify;
+        color: var(--pessego-claro);
+        padding: 1rem;
+        overflow-wrap: break-word;
+        word-break: break-word;
+      }
+    
+      .carta img {
+        width: 1.5rem;
+        height: auto;
+        vertical-align: middle;
+      }
 
     .cabecalho__link {
         font-size: 1.5rem;
@@ -175,15 +210,17 @@ body {
         flex-direction: column;
         align-items: center;
         gap: 1rem;
-        width: 89vw; 
         overflow-wrap: break-word;
-        margin-top: 7rem;
+
     }
 
     .imagem__home {
-        width: 25rem;
-        height: 30rem;
-    }
+        width: 100%;
+        max-width: 390px;
+        height: auto;
+        margin-top: 2rem;
+      }
+    
 
     .carousel-inner {
         height: 85vh; 
