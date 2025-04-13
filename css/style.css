@@ -1,6 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400..700;1,400..700&family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap');
 
-/* importar icones se necessãrio for para colocar nas cartas */
+
 
 :root {
     --black-coffe: #131010;
@@ -76,14 +76,14 @@ body {
     align-items: center;
     height: 100vh;
     background-image: url('../assets/carrossel/sombra.JPG');
-    background-size: cover; /* Ajusta a imagem para cobrir toda a tela */
-    background-position: center; /* Centraliza a imagem */
-    background-repeat: no-repeat; /* Evita repetição da imagem */
+    background-size: cover; 
+    background-position: center; 
+    background-repeat: no-repeat; 
     
 }
 
 
-/* Pesquisar paleta de cores nos sites anotados no caderno */
+
 .paragrafo {
     color: var(--pessego-claro);
 }
@@ -113,9 +113,9 @@ body {
 }
 
 .carousel-inner img {
-    width: 100%;  /* Faz a imagem ocupar toda a largura do contêiner */
-    height: 80vh; /* Define a altura como 80% da altura da tela */
-    object-fit: cover; /* Garante que a imagem cubra o espaço sem deformar */
+    width: 100%;  
+    height: 80vh; 
+    object-fit: cover; 
 }
 
 
@@ -130,30 +130,49 @@ body {
 }
 
 @media (max-width: 430px) {
+
     .container {
         flex-direction: column;
         align-items: center;
-        margin-top: 3rem;;
+        margin-top: 3rem;
+
     }
 
-    .carta__container {
+    .cabecalho {
         flex-direction: column;
-        align-items: center;
+        align-items: start;
         gap: 1rem;
-        margin: 0;
+        margin-top: 3rem;
     }
+
+    .image__background {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 1rem;
+            width: 100%; 
+            overflow-wrap: break-word;
+          }
+          
+    
 
     .container__section {
         
         height: 100%;
     }
 
-    .paragrafo {
-        font-size: 1.2rem;
-    }
-
     .cabecalho__link {
         font-size: 1.5rem;
+    }
+
+    .descricao{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 1rem;
+        width: 89vw; 
+        overflow-wrap: break-word;
+        margin-top: 7rem;
     }
 
     .imagem__home {
@@ -162,11 +181,11 @@ body {
     }
 
     .carousel-inner {
-        height: 85vh; /* Ajusta a altura do carrossel para telas menores */
+        height: 85vh; 
     }
 
     .carousel-inner img {
-        height: 80vh; /* Ajusta a altura da imagem para telas menores */
+        height: 80vh; 
         padding: 0;
         margin: 0;
     }
