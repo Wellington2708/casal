@@ -161,6 +161,10 @@ body {
         height: 100%;
     }
 
+    .descricao__container{
+        height: 68%;
+    }
+
     .cabecalho__link {
         font-size: 1.5rem;
     }
